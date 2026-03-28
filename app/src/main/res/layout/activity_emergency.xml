@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#E3F2FD"
+    android:background="@color/deep_plum"
     android:padding="24dp">
 
     <TextView
@@ -13,6 +13,6 @@
         android:text="Emergency Contacts Page"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="#0D47A1" />
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
