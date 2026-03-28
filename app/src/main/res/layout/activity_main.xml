@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D47A1">
+    android:background="@drawable/bg_page">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Health Assistant"
-            android:textSize="30sp"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-medium"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:layout_marginTop="30dp" />
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Smart support for your health"
-            android:textSize="16sp"
+            android:textSize="17sp"
             android:textColor="#D6EAF8"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="24dp" />
@@ -46,8 +47,8 @@
             android:text="Medication Reminder"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:backgroundTint="#FFFFFF"
+            android:textColor="#1565C0"
+            android:background="@drawable/bg_white_button"
             android:layout_marginBottom="16dp"
             android:padding="16dp" />
 
@@ -58,8 +59,8 @@
             android:text="Blood Sugar Tracker"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:backgroundTint="#FFFFFF"
+            android:textColor="#1565C0"
+            android:background="@drawable/bg_white_button"
             android:layout_marginBottom="16dp"
             android:padding="16dp" />
 
@@ -70,8 +71,8 @@
             android:text="Emergency Contacts"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:backgroundTint="#FFFFFF"
+            android:textColor="#1565C0"
+            android:background="@drawable/bg_white_button"
             android:layout_marginBottom="16dp"
             android:padding="16dp" />
 
@@ -82,8 +83,8 @@
             android:text="Daily Notes"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:backgroundTint="#FFFFFF"
+            android:textColor="#1565C0"
+            android:background="@drawable/bg_white_button"
             android:padding="16dp" />
 
     </LinearLayout>
