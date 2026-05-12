@@ -55,7 +55,7 @@
             android:id="@+id/btnSugar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Blood Sugar Tracker"
+            android:text="Sugar & Pressure Reminders"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/deep_plum"
@@ -68,6 +68,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Emergency Contacts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_plum"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/btnCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calendar Tasks"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/deep_plum"
