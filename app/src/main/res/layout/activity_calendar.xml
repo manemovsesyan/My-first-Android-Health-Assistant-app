@@ -12,86 +12,113 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvEmergencyTitle"
+            android:id="@+id/tvCalendarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Emergency Contacts"
+            android:text="Health Calendar"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvEmergencySubtitle"
+            android:id="@+id/tvCalendarSubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="20dp"
-            android:text="Save trusted phone numbers and call them quickly when you feel very bad."
+            android:layout_marginBottom="18dp"
+            android:text="Choose a day, write what you need to do, and get reminded on that date."
             android:textColor="#D6EAF8"
             android:textSize="15sp" />
 
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Selected date"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <EditText
-            android:id="@+id/etContactName"
+            android:id="@+id/etCalendarTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#FFFFFF"
-            android:hint="Contact name (example: Doctor, Mom)"
-            android:inputType="textCapWords"
+            android:hint="What should I remind you about?"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="2"
             android:padding="12dp"
             android:textColor="@color/deep_plum"
             android:textColorHint="#5D6D7E" />
 
         <EditText
-            android:id="@+id/etContactPhone"
+            android:id="@+id/etCalendarTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#FFFFFF"
-            android:hint="Phone number"
-            android:inputType="phone"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Choose reminder time"
+            android:inputType="none"
             android:padding="12dp"
             android:textColor="@color/deep_plum"
             android:textColorHint="#5D6D7E" />
 
         <Button
-            android:id="@+id/btnSaveContact"
+            android:id="@+id/btnSaveCalendarTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="#FFFFFF"
             android:padding="14dp"
-            android:text="Save Emergency Contact"
+            android:text="Save Calendar Reminder"
             android:textColor="@color/deep_plum"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnCallPrimaryContact"
+        <TextView
+            android:id="@+id/tvCalendarTaskDates"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:backgroundTint="#FFCDD2"
-            android:padding="16dp"
-            android:text="Call First Contact Now"
-            android:textColor="@color/deep_plum"
-            android:textSize="18sp"
+            android:layout_marginBottom="14dp"
+            android:text="Days with reminders: none"
+            android:textColor="#D6EAF8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSelectedDateTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tasks for selected date"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvEmergencyHelp"
+            android:id="@+id/tvCalendarHelp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="Tap a contact to call. Long press a contact to delete it."
+            android:layout_marginBottom="10dp"
+            android:text="Long press a task to delete it and cancel its reminder."
             android:textColor="#D6EAF8"
             android:textSize="13sp" />
 
         <ListView
-            android:id="@+id/listEmergencyContacts"
+            android:id="@+id/listCalendarTasks"
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="300dp"
             android:background="#FFFFFF"
             android:divider="#BBDEFB"
             android:dividerHeight="1dp" />

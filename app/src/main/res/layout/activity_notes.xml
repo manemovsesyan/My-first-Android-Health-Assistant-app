@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     android:background="@color/deep_plum"
+    android:fillViewport="true"
     android:padding="24dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daily Notes Page"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF" />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvNotesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Daily Notes"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNotesSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Write how you feel today and keep your health diary"
+            android:textColor="#D6EAF8"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etDailyNote"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="top|start"
+            android:hint="Example: Took medicine at 09:00, felt better after lunch..."
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="5"
+            android:padding="12dp"
+            android:textColor="@color/deep_plum"
+            android:textColorHint="#5D6D7E" />
+
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="14dp"
+            android:text="Save Note"
+            android:textColor="@color/deep_plum"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSavedNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Saved Notes"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNotesHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Long press a note to delete it."
+            android:textColor="#D6EAF8"
+            android:textSize="13sp" />
+
+        <ListView
+            android:id="@+id/listNotes"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="#FFFFFF"
+            android:divider="#BBDEFB"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+</ScrollView>

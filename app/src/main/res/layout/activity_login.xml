@@ -2,103 +2,156 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/deep_plum">
+    android:background="@drawable/bg_login_gradient"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="Health Assistant logo"
+            android:src="@drawable/health_icon_purple" />
 
         <TextView
             android:id="@+id/loginTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="60dp" />
+            android:layout_marginTop="18dp"
+            android:text="Welcome back"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/loginSubtitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Smart support for your health"
-            android:textSize="16sp"
-            android:textColor="#D6EAF8"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="26dp"
+            android:gravity="center"
+            android:text="Sign in to manage your medicines, sugar, pressure, and notes."
+            android:textColor="@color/health_lavender"
+            android:textSize="15sp" />
 
-        <RadioGroup
-            android:id="@+id/loginTypeGroup"
+        <LinearLayout
+            android:id="@+id/loginCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="12dp">
+            android:background="@drawable/bg_login_card"
+            android:elevation="8dp"
+            android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/rbEmail"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"
-                android:textColor="#FFFFFF"
-                android:checked="true" />
+                android:text="Sign in with"
+                android:textColor="@color/health_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-            <RadioButton
-                android:id="@+id/rbPhone"
+            <RadioGroup
+                android:id="@+id/loginTypeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/bg_login_chip"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Email"
+                    android:textColor="@color/health_text_primary"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:textColor="@color/health_text_primary"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvLoginValueLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone"
-                android:textColor="#FFFFFF"
-                android:layout_marginStart="18dp" />
-        </RadioGroup>
+                android:text="Email address"
+                android:textColor="@color/health_text_secondary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/etLoginValue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter your email"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/deep_plum"
-            android:textColorHint="#5D6D7E"
-            android:backgroundTint="#FFFFFF"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <EditText
+                android:id="@+id/etLoginValue"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_login_input"
+                android:hint="example@mail.com"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/health_text_primary"
+                android:textColorHint="@color/health_text_secondary" />
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter your password"
-            android:inputType="textPassword"
-            android:textColor="@color/deep_plum"
-            android:textColorHint="#5D6D7E"
-            android:backgroundTint="#FFFFFF"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/health_text_secondary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvLoginHelp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Use a valid email/phone and password (min 6 chars) to continue."
-            android:textColor="#D6EAF8"
-            android:textSize="13sp"
-            android:layout_marginBottom="12dp" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_login_input"
+                android:hint="Minimum 6 characters"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/health_text_primary"
+                android:textColorHint="@color/health_text_secondary" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/deep_plum"
-            android:backgroundTint="#FFFFFF"
-            android:layout_marginBottom="12dp"
-            android:padding="14dp" />
+            <TextView
+                android:id="@+id/tvLoginHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:text="Your information stays on this device for this demo app."
+                android:textColor="@color/health_text_secondary"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_login_button"
+                android:padding="14dp"
+                android:text="Continue"
+                android:textColor="@color/deep_plum"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
