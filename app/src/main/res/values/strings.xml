@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">assistent</string>
+    <string name="app_name">ReMedi</string>
+    <string name="remedi_check_title">ReMedi Check Reminders</string>
+    <string name="remedi_check_subtitle">Set separate reminders for blood sugar and blood pressure</string>
+    <string name="sugar_reminder_label">Blood Sugar Reminder</string>
+    <string name="pressure_reminder_label">Blood Pressure Reminder</string>
+    <string name="choose_time_hint">Choose time</string>
+    <string name="set_sugar_btn">Set Sugar Reminder</string>
+    <string name="set_pressure_btn">Set Pressure Reminder</string>
+    <string name="saved_reminders_title">Saved Health Reminders</string>
+    <string name="sugar_pressure_history">Sugar &amp; Pressure History</string>
+    <string name="history_subtitle">Save values here so your doctor can review the patient history.</string>
+    <string name="sugar_value_hint">Blood sugar value (example: 110)</string>
+    <string name="systolic_hint">Systolic</string>
+    <string name="diastolic_hint">Diastolic</string>
+    <string name="measurement_note_hint">Optional note (before meal, after medicine...)</string>
+    <string name="save_measurement_btn">Save Measurement</string>
+    <string name="history_help">Long press a history item to delete it.</string>
 </resources>

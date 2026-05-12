@@ -1,4 +1,4 @@
-package com.example.assistent;
+package com.example.ReMedi;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ReMedi.R;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +30,7 @@ import java.util.TreeSet;
 
 public class CalendarActivity extends AppCompatActivity {
 
-    private static final String PREFS_NAME = "health_assistant_prefs";
+    private static final String PREFS_NAME = "health_remedi_prefs";
     private static final String KEY_CALENDAR_TASKS = "calendar_tasks";
     private static final String NOTIFICATION_TITLE = "Calendar reminder";
 

@@ -17,7 +17,7 @@
             android:layout_width="112dp"
             android:layout_height="112dp"
             android:layout_marginTop="48dp"
-            android:contentDescription="Health Assistant logo"
+            android:contentDescription="ReMedi Logo"
             android:src="@drawable/health_icon_purple" />
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Welcome back"
+            android:text="Welcome to ReMedi"
             android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="26dp"
             android:gravity="center"
-            android:text="Sign in to manage your medicines, sugar, pressure, and notes."
+            android:text="Sign in to manage your health data securely."
             android:textColor="@color/health_lavender"
             android:textSize="15sp" />
 
@@ -47,7 +47,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_login_card"
             android:elevation="8dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,6 +103,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="16dp"
+                android:autofillHints="emailAddress"
                 android:background="@drawable/bg_login_input"
                 android:hint="example@mail.com"
                 android:inputType="textEmailAddress"
@@ -124,6 +126,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="10dp"
+                android:autofillHints="password"
                 android:background="@drawable/bg_login_input"
                 android:hint="Minimum 6 characters"
                 android:inputType="textPassword"
@@ -137,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="18dp"
-                android:text="Your information stays on this device for this demo app."
+                android:text="Your information stays on this device."
                 android:textColor="@color/health_text_secondary"
                 android:textSize="13sp" />
 
@@ -146,7 +149,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/bg_login_button"
-                android:padding="14dp"
                 android:text="Continue"
                 android:textColor="@color/deep_plum"
                 android:textSize="18sp"
