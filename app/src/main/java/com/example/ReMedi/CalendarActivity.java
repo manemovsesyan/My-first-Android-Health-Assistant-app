@@ -322,7 +322,7 @@ public class CalendarActivity extends AppCompatActivity {
                 item.put("requestCode", requestCode);
                 item.put("notificationMessage", notificationMessage);
             } catch (JSONException ignored) {
-                // JSONObject with primitive values should not fail here.
+
             }
             return item;
         }

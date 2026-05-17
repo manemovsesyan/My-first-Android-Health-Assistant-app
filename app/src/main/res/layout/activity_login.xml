@@ -14,11 +14,11 @@
 
         <ImageView
             android:id="@+id/loginLogo"
-            android:layout_width="112dp"
-            android:layout_height="112dp"
+            android:layout_width="147dp"
+            android:layout_height="149dp"
             android:layout_marginTop="48dp"
             android:contentDescription="ReMedi Logo"
-            android:src="@drawable/health_icon_purple" />
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/loginTitle"

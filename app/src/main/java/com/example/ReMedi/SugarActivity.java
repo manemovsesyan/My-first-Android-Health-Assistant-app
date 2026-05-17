@@ -364,7 +364,7 @@ public class SugarActivity extends AppCompatActivity {
                 item.put("requestCode", requestCode);
                 item.put("notificationMessage", notificationMessage);
             } catch (JSONException ignored) {
-                // JSONObject with primitive values should not fail here.
+
             }
             return item;
         }
@@ -412,7 +412,7 @@ public class SugarActivity extends AppCompatActivity {
                 item.put("note", note);
                 item.put("measuredAt", measuredAt);
             } catch (JSONException ignored) {
-                // JSONObject with primitive values should not fail here.
+
             }
             return item;
         }

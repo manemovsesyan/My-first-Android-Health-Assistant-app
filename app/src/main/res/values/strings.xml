@@ -16,4 +16,5 @@
     <string name="measurement_note_hint">Optional note (before meal, after medicine...)</string>
     <string name="save_measurement_btn">Save Measurement</string>
     <string name="history_help">Long press a history item to delete it.</string>
+    <string name="action_logout">Log out</string>
 </resources>

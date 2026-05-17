@@ -191,7 +191,7 @@ public class EmergencyActivity extends AppCompatActivity {
                 item.put("name", name);
                 item.put("phone", phone);
             } catch (JSONException ignored) {
-                // JSONObject with primitive values should not fail here.
+
             }
             return item;
         }
