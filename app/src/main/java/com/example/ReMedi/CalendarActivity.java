@@ -35,6 +35,7 @@ public class CalendarActivity extends AppCompatActivity {
     private static final String NOTIFICATION_TITLE = "Calendar reminder";
 
     private TextView tvSelectedDate;
+    private CalendarView calendarView;
     private TextView tvCalendarTaskDates;
     private EditText etCalendarTask;
     private EditText etCalendarTime;
@@ -48,7 +49,7 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        CalendarView calendarView = findViewById(R.id.calendarView);
+        calendarView = findViewById(R.id.calendarView);
         tvSelectedDate = findViewById(R.id.tvSelectedDate);
         tvCalendarTaskDates = findViewById(R.id.tvCalendarTaskDates);
         etCalendarTask = findViewById(R.id.etCalendarTask);
@@ -63,6 +64,7 @@ public class CalendarActivity extends AppCompatActivity {
         updateSelectedDateLabel();
         refreshSelectedDateTasks();
         updateTaskDatesLabel();
+        updateSelectedDateLabel();
 
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
             selectedDate.set(Calendar.YEAR, year);
@@ -109,6 +111,7 @@ public class CalendarActivity extends AppCompatActivity {
         saveTasks();
         refreshSelectedDateTasks();
         updateTaskDatesLabel();
+        updateSelectedDateLabel();
         etCalendarTask.setText("");
         etCalendarTime.setText("");
 
@@ -122,6 +125,7 @@ public class CalendarActivity extends AppCompatActivity {
         saveTasks();
         refreshSelectedDateTasks();
         updateTaskDatesLabel();
+        updateSelectedDateLabel();
         Toast.makeText(this, "Calendar task deleted", Toast.LENGTH_SHORT).show();
     }
 
@@ -213,7 +217,22 @@ public class CalendarActivity extends AppCompatActivity {
     }
 
     private void updateSelectedDateLabel() {
-        tvSelectedDate.setText("Selected: " + formatDisplayDate(selectedDate));
+        String selectedKey = getSelectedDateKey();
+        boolean hasTaskOnDay = false;
+        for (CalendarTask task : allTasks) {
+            if (selectedKey.equals(task.dateKey)) {
+                hasTaskOnDay = true;
+                break;
+            }
+        }
+
+        if (hasTaskOnDay) {
+            tvSelectedDate.setText("Selected: " + formatDisplayDate(selectedDate) + " • Reminder set");
+            tvSelectedDate.setTextColor(android.graphics.Color.parseColor("#8EF6D3"));
+        } else {
+            tvSelectedDate.setText("Selected: " + formatDisplayDate(selectedDate));
+            tvSelectedDate.setTextColor(android.graphics.Color.WHITE);
+        }
     }
 
     private void refreshSelectedDateTasks() {

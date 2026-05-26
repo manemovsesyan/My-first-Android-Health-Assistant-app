@@ -12,12 +12,40 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLangHy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Հայ" />
+
+            <Button
+                android:id="@+id/btnLangEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="EN" />
+
+            <Button
+                android:id="@+id/btnLangRu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="РУ" />
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/loginLogo"
             android:layout_width="147dp"
             android:layout_height="149dp"
-            android:layout_marginTop="48dp"
-            android:contentDescription="ReMedi Logo"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/login_logo_desc"
             android:src="@mipmap/ic_launcher" />
 
         <TextView
@@ -25,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Welcome to ReMedi"
+            android:text="@string/login_title"
             android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -37,7 +65,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="26dp"
             android:gravity="center"
-            android:text="Sign in to manage your health data securely."
+            android:text="@string/login_subtitle"
             android:textColor="@color/health_lavender"
             android:textSize="15sp" />
 
@@ -53,7 +81,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign in with"
+                android:text="@string/login_sign_in_with"
                 android:textColor="@color/health_text_primary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -74,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="true"
-                    android:text="Email"
+                    android:text="@string/login_type_email"
                     android:textColor="@color/health_text_primary"
                     android:textStyle="bold" />
 
@@ -83,7 +111,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Phone"
+                    android:text="@string/login_type_phone"
                     android:textColor="@color/health_text_primary"
                     android:textStyle="bold" />
             </RadioGroup>
@@ -92,7 +120,7 @@
                 android:id="@+id/tvLoginValueLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email address"
+                android:text="@string/login_email_label"
                 android:textColor="@color/health_text_secondary"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -105,17 +133,17 @@
                 android:layout_marginBottom="16dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/bg_login_input"
-                android:hint="example@mail.com"
+                android:hint="@string/login_email_hint"
                 android:inputType="textEmailAddress"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:textColor="@color/health_text_primary"
+                android:textColor="@color/black"
                 android:textColorHint="@color/health_text_secondary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"
+                android:text="@string/login_password"
                 android:textColor="@color/health_text_secondary"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -128,11 +156,11 @@
                 android:layout_marginBottom="10dp"
                 android:autofillHints="password"
                 android:background="@drawable/bg_login_input"
-                android:hint="Minimum 6 characters"
+                android:hint="@string/login_password_hint"
                 android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:textColor="@color/health_text_primary"
+                android:textColor="@color/black"
                 android:textColorHint="@color/health_text_secondary" />
 
             <TextView
@@ -140,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="18dp"
-                android:text="Your information stays on this device."
+                android:text="@string/login_help"
                 android:textColor="@color/health_text_secondary"
                 android:textSize="13sp" />
 
@@ -149,7 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:background="@drawable/bg_login_button"
-                android:text="Continue"
+                android:text="@string/login_continue"
                 android:textColor="@color/deep_plum"
                 android:textSize="18sp"
                 android:textStyle="bold" />
