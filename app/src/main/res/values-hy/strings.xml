@@ -1,0 +1,46 @@
+<resources>
+    <string name="login_logo_desc">ReMedi Լոգո</string>
+    <string name="login_title">Բարի գալուստ ReMedi</string>
+    <string name="login_subtitle">Մուտք գործեք՝ ձեր առողջական տվյալները անվտանգ կառավարելու համար։</string>
+    <string name="login_sign_in_with">Մուտք գործել</string>
+    <string name="login_type_email">Էլ․ հասցե</string>
+    <string name="login_type_phone">Հեռախոս</string>
+    <string name="login_email_label">Էլ․ հասցե</string>
+    <string name="login_email_hint">example@mail.com</string>
+    <string name="login_password">Գաղտնաբառ</string>
+    <string name="login_password_hint">Առնվազն 6 նիշ</string>
+    <string name="login_help">Ձեր տվյալները պահվում են այս սարքում։</string>
+    <string name="login_continue">Շարունակել</string>
+    <string name="login_enter_email">Մուտքագրեք ձեր էլ․ հասցեն</string>
+    <string name="login_enter_phone">Մուտքագրեք ձեր հեռախոսահամարը</string>
+    <string name="login_fill_field">Խնդրում ենք լրացնել դաշտը</string>
+    <string name="login_password_length">Գաղտնաբառը պետք է լինի առնվազն 6 նիշ</string>
+    <string name="login_valid_email">Խնդրում ենք մուտքագրել վավեր էլ․ հասցե</string>
+    <string name="login_valid_phone">Խնդրում ենք մուտքագրել վավեր հեռախոսահամար</string>
+    <string name="metric_sugar">Շաքար</string><string name="metric_pressure">Ճնշում</string><string name="metric_weight">Քաշ</string><string name="hs_title">Առողջական վիճակ</string><string name="ok">Լավ</string><string name="hs_select_metric">Խնդրում ենք ընտրել չափանիշը։</string><string name="hs_enter_sugar">Խնդրում ենք մուտքագրել արյան շաքարի արժեքը։</string><string name="hs_positive_sugar">Շաքարի արժեքը պետք է լինի դրական թիվ։</string><string name="hs_sugar_normal">Արյան շաքար. Ամեն ինչ նորմալ է։ Ձեր գլյուկոզայի մակարդակը առողջ միջակայքում է։</string><string name="hs_sugar_abnormal">Արյան շաքար. Նորմայից դուրս է։ Խնդրում ենք հետևել և անհրաժեշտության դեպքում դիմել բժշկի։</string><string name="hs_enter_pressure">Խնդրում ենք մուտքագրել և՛ սիստոլիկ, և՛ դիաստոլիկ արժեքները։</string><string name="hs_positive_pressure">Ճնշման արժեքները պետք է լինեն դրական թվեր։</string><string name="hs_pressure_normal">Արյան ճնշում. Ամեն ինչ նորմալ է։ Ձեր ճնշումը առողջ միջակայքում է։</string><string name="hs_pressure_abnormal">Արյան ճնշում. Ուշադրություն է պահանջում։ Խորհուրդ է տրվում պարբերաբար չափել և քննարկել բժշկի հետ։</string><string name="hs_enter_weight_waist">Խնդրում ենք մուտքագրել և՛ քաշը, և՛ գոտկատեղը։</string><string name="hs_positive_weight_waist">Քաշը և գոտկատեղը պետք է լինեն դրական թվեր։</string><string name="hs_bmi_underweight">Քաշային կարգավիճակ՝ թերքաշ։ Խորհուրդ է տրվում դիմել բժշկի կամ սննդաբանի։</string><string name="hs_bmi_normal">Քաշային կարգավիճակ՝ ամեն ինչ նորմալ է։ Շատ լավ է, շարունակեք առողջ ապրելակերպը։</string><string name="hs_bmi_overweight">Քաշային կարգավիճակ՝ ավելաքաշ։ Խորհուրդ է տրվում վերանայել սննդակարգը և ավելացնել ֆիզիկական ակտիվությունը։</string><string name="hs_bmi_obesity">Քաշային կարգավիճակ՝ ճարպակալում։ Խուսափեք խիստ դիետաներից և խորհրդակցեք մասնագետի հետ։</string><string name="hs_waist_female_mid">Գոտկատեղի խորհուրդ․ Թեթև բարձր ռիսկ։ Կառավարեք չափաբաժինները և ակտիվ եղեք։</string><string name="hs_waist_female_high">Գոտկատեղի խորհուրդ․ Բարձր ռիսկ։ Խորհուրդ է տրվում հետևել ապրելակերպին և դիմել մասնագետի։</string><string name="hs_waist_male_mid">Գոտկատեղի խորհուրդ․ Թեթև բարձր ռիսկ։ Վերահսկեք կալորիաները և շատ շարժվեք։</string><string name="hs_waist_male_high">Գոտկատեղի խորհուրդ․ Բարձր ռիսկ։ Խորհուրդ է տրվում կարգավորել սնունդը և դիմել մասնագետի։</string><string name="hs_saved">Տվյալները պահպանվել են։</string><string name="hs_weight_waist_note">Քաշ՝ %1$s կգ, Գոտկատեղ՝ %2$s սմ</string>
+    <string name="metric_label">Չափանիշ</string>
+    <string name="metric_select_hint">Ընտրեք չափանիշը</string>
+    <string name="weight_hint">Քաշ (կգ)</string>
+    <string name="waist_hint">Գոտկատեղ (սմ)</string>
+    <string name="reminder_title_sugar_check">Արյան շաքարի ստուգում</string>
+    <string name="reminder_message_sugar_check">Ժամանակն է ստուգելու արյան շաքարը</string>
+    <string name="reminder_title_pressure_check">Արյան ճնշման ստուգում</string>
+    <string name="reminder_message_pressure_check">Ժամանակն է ստուգելու արյան ճնշումը</string>
+    <string name="toast_choose_time">Խնդրում ենք ընտրել ժամը</string>
+    <string name="toast_choose_valid_time">Խնդրում ենք ընտրել վավեր ժամ</string>
+    <string name="toast_daily_reminder_scheduled">%1$s ամենօրյա հիշեցումը դրվեց։ Ջնջելու համար սեղմեք երկար։</string>
+    <string name="toast_reminder_deleted">Հիշեցումը ջնջվեց</string>
+    <string name="toast_measurement_deleted">Չափումը ջնջվեց</string>
+    <string name="action_done">Կատարված է</string>
+    <string name="action_remind_10">Հիշեցնել 10 րոպեից</string>
+    <string name="reminder_channel_name">Առողջության հիշեցումներ</string>
+    <string name="reminder_channel_desc">Ծանուցումներ դեղերի, շաքարի և ճնշման հիշեցումների համար</string>
+    <string name="reminder_fallback_name">ձեր առողջության հիշեցումը</string>
+    <string name="reminder_title_generic">Առողջության հիշեցում</string>
+    <string name="reminder_time_for">Ժամանակն է՝ %1$s</string>
+    <string name="age_hint">Տարիք</string>
+    <string name="hs_enter_weight_waist_age">Խնդրում ենք մուտքագրել քաշը, գոտկատեղը և տարիքը։</string>
+    <string name="hs_positive_weight_waist_age">Քաշը/գոտկատեղը պետք է լինեն դրական թվեր, իսկ տարիքը՝ դրական ամբողջ թիվ։</string>
+    <string name="hs_age_risk">Տարիքային խորհուրդ․ 40-ից հետո ավելի հաճախ վերահսկեք քաշն ու գոտկատեղը և քննարկեք բժշկի հետ։</string>
+    <string name="hs_weight_waist_age_note">Քաշ՝ %1$s կգ, Գոտկատեղ՝ %2$s սմ, Տարիք՝ %3$s</string>
+</resources>

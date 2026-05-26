@@ -1,0 +1,46 @@
+<resources>
+    <string name="login_logo_desc">Логотип ReMedi</string>
+    <string name="login_title">Добро пожаловать в ReMedi</string>
+    <string name="login_subtitle">Войдите, чтобы безопасно управлять своими данными о здоровье.</string>
+    <string name="login_sign_in_with">Войти через</string>
+    <string name="login_type_email">Email</string>
+    <string name="login_type_phone">Телефон</string>
+    <string name="login_email_label">Эл. почта</string>
+    <string name="login_email_hint">example@mail.com</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_password_hint">Минимум 6 символов</string>
+    <string name="login_help">Ваша информация хранится только на этом устройстве.</string>
+    <string name="login_continue">Продолжить</string>
+    <string name="login_enter_email">Введите ваш email</string>
+    <string name="login_enter_phone">Введите ваш номер телефона</string>
+    <string name="login_fill_field">Пожалуйста, заполните поле</string>
+    <string name="login_password_length">Пароль должен быть не менее 6 символов</string>
+    <string name="login_valid_email">Пожалуйста, введите корректный email</string>
+    <string name="login_valid_phone">Пожалуйста, введите корректный номер телефона</string>
+    <string name="metric_sugar">Сахар</string><string name="metric_pressure">Давление</string><string name="metric_weight">Вес</string><string name="hs_title">Состояние здоровья</string><string name="ok">ОК</string><string name="hs_select_metric">Пожалуйста, выберите метрику.</string><string name="hs_enter_sugar">Пожалуйста, введите уровень сахара.</string><string name="hs_positive_sugar">Значение сахара должно быть положительным числом.</string><string name="hs_sugar_normal">Сахар в крови: Всё в норме. Уровень глюкозы в здоровом диапазоне.</string><string name="hs_sugar_abnormal">Сахар в крови: Вне нормы. Наблюдайте и при необходимости обратитесь к врачу.</string><string name="hs_enter_pressure">Пожалуйста, введите и систолическое, и диастолическое значения.</string><string name="hs_positive_pressure">Значения давления должны быть положительными числами.</string><string name="hs_pressure_normal">Давление: Всё в норме. Ваше давление в здоровом диапазоне.</string><string name="hs_pressure_abnormal">Давление: Требует внимания. Регулярно контролируйте и обсудите с врачом.</string><string name="hs_enter_weight_waist">Пожалуйста, введите и вес, и талию.</string><string name="hs_positive_weight_waist">Вес и талия должны быть положительными числами.</string><string name="hs_bmi_underweight">Статус веса: Недостаточный вес. Рекомендуется консультация врача или нутрициолога.</string><string name="hs_bmi_normal">Статус веса: Всё в норме. Отлично, продолжайте здоровый образ жизни!</string><string name="hs_bmi_overweight">Статус веса: Избыточный вес. Рекомендуется скорректировать питание и увеличить активность.</string><string name="hs_bmi_obesity">Статус веса: Ожирение. Избегайте экстремальных диет и обратитесь к специалисту.</string><string name="hs_waist_female_mid">Совет по талии: Умеренно повышенный риск. Следите за порциями и активностью.</string><string name="hs_waist_female_high">Совет по талии: Высокий риск висцерального жира. Рекомендуется консультация специалиста.</string><string name="hs_waist_male_mid">Совет по талии: Умеренно повышенный риск. Контролируйте калории и больше двигайтесь.</string><string name="hs_waist_male_high">Совет по талии: Высокий риск висцерального жира. Рекомендуется скорректировать питание и обратиться к специалисту.</string><string name="hs_saved">Значения сохранены.</string><string name="hs_weight_waist_note">Вес: %1$s кг, Талия: %2$s см</string>
+    <string name="metric_label">Метрика</string>
+    <string name="metric_select_hint">Выберите метрику</string>
+    <string name="weight_hint">Вес (кг)</string>
+    <string name="waist_hint">Талия (см)</string>
+    <string name="reminder_title_sugar_check">Проверка сахара в крови</string>
+    <string name="reminder_message_sugar_check">Время проверить уровень сахара</string>
+    <string name="reminder_title_pressure_check">Проверка давления</string>
+    <string name="reminder_message_pressure_check">Время проверить артериальное давление</string>
+    <string name="toast_choose_time">Пожалуйста, выберите время</string>
+    <string name="toast_choose_valid_time">Пожалуйста, выберите корректное время</string>
+    <string name="toast_daily_reminder_scheduled">Ежедневное напоминание "%1$s" установлено. Удерживайте, чтобы удалить.</string>
+    <string name="toast_reminder_deleted">Напоминание удалено</string>
+    <string name="toast_measurement_deleted">Измерение удалено</string>
+    <string name="action_done">Сделано</string>
+    <string name="action_remind_10">Напомнить через 10 мин</string>
+    <string name="reminder_channel_name">Напоминания о здоровье</string>
+    <string name="reminder_channel_desc">Уведомления для напоминаний о лекарствах, сахаре и давлении</string>
+    <string name="reminder_fallback_name">ваше напоминание о здоровье</string>
+    <string name="reminder_title_generic">Напоминание о здоровье</string>
+    <string name="reminder_time_for">Время для %1$s</string>
+    <string name="age_hint">Возраст</string>
+    <string name="hs_enter_weight_waist_age">Пожалуйста, введите вес, талию и возраст.</string>
+    <string name="hs_positive_weight_waist_age">Вес/талия должны быть положительными числами, возраст — положительным целым.</string>
+    <string name="hs_age_risk">Совет с учетом возраста: после 40 лет чаще контролируйте вес и талию и обсуждайте динамику с врачом.</string>
+    <string name="hs_weight_waist_age_note">Вес: %1$s кг, Талия: %2$s см, Возраст: %3$s</string>
+</resources>
